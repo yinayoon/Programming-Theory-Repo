@@ -7,13 +7,22 @@ public class GameManager : MonoBehaviour
 {
     [Header("- GUI")]
     public Text shapeText;
+    public Text userNameText;
 
     GameObject target;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject go = GameObject.Find("Data Persistence");
+        if (go == null)
+        {
+            userNameText.text = $"User Name : ";
+        }
+        else
+        {
+            userNameText.text = $"User Name : {DataPersistence.UserName}";
+        }
     }
 
     // Update is called once per frame
