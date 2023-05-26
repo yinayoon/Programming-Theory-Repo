@@ -6,6 +6,9 @@ public class DataPersistence : MonoBehaviour
 {
     public static string UserName;
 
+    [SerializeField]
+    private string userName;
+
     private void Start()
     {
         DontDestroyOnLoad(this);
@@ -13,6 +16,6 @@ public class DataPersistence : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(UserName);
+        userName = UserName;
     }
 }

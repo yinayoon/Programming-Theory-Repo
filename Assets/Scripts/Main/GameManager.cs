@@ -81,18 +81,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void DisplayText(string shape) // polymorphism
+    void DisplayText(string shape) // POLYMORPHISM
     {
         shapeText.text = $"Shape : {shape}";
     }
 
-    void DisplayText(string shape, int fontSize) // polymorphism
+    void DisplayText(string shape, int fontSize) // POLYMORPHISM
     {
         shapeText.text = $"Shape : {shape}";
         shapeText.fontSize = fontSize;
     }
 
-    void DisplayText(string shape, Color color) // polymorphism
+    void DisplayText(string shape, Color color) // POLYMORPHISM
     {
         shapeText.text = $"Shape : {shape}";
         shapeText.color = color;

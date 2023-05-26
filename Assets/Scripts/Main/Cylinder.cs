@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cylinder : Obj // inheritance
+public class Cylinder : Obj // INHERITANCE
 {
-    public static Cylinder Instance { get; private set; }
+    public static Cylinder Instance { get; private set; } // ENCAPSULATION
     public Color ShapeColor = Color.red;
 
     private void Awake()
@@ -17,7 +17,7 @@ public class Cylinder : Obj // inheritance
         Anim();
     }
 
-    public override void Anim()
+    public override void Anim() // ABSTRACTION
     {
         shapeName = "Cylinder";
         transform.Rotate(0, angle * Time.deltaTime, 0);

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sphere : Obj // inheritance
+public class Sphere : Obj // INHERITANCE
 {
-    public static Sphere Instance { get; private set; }
+    public static Sphere Instance { get; private set; } // ENCAPSULATION
     public Color ShapeColor = Color.red;
 
     private void Awake()
@@ -17,7 +17,7 @@ public class Sphere : Obj // inheritance
         Anim();
     }
 
-    public override void Anim()
+    public override void Anim() // ABSTRACTION
     {
         shapeName = "Sphere";
         transform.Rotate(angle * Time.deltaTime, 0, angle * Time.deltaTime);
