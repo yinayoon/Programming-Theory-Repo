@@ -5,7 +5,7 @@ using UnityEngine;
 public class Sphere : Obj // INHERITANCE
 {
     public static Sphere Instance { get; private set; } // ENCAPSULATION
-    public Color ShapeColor = Color.red;
+    public Color ShapeColor = Color.blue;
 
     private void Awake()
     {

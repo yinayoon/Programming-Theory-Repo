@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cylinder : Obj // INHERITANCE
 {
     public static Cylinder Instance { get; private set; } // ENCAPSULATION
-    public Color ShapeColor = Color.red;
+    public Color ShapeColor = Color.green;
 
     private void Awake()
     {

@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
                 }
 
                 target.GetComponent<Renderer>().material.color = Cube.Instance.ShapeColor;
+                Debug.Log(Cube.Instance.ShapeColor);
             }
             else if (target.transform.gameObject.layer == LayerMask.NameToLayer("Cylinder"))
             {
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
                 }
 
                 target.GetComponent<Renderer>().material.color = Cylinder.Instance.ShapeColor;
+                Debug.Log(Cylinder.Instance.ShapeColor);
             }
             else if (target.transform.gameObject.layer == LayerMask.NameToLayer("Sphere"))
             {
@@ -66,6 +68,7 @@ public class GameManager : MonoBehaviour
                 }
 
                 target.GetComponent<Renderer>().material.color = Sphere.Instance.ShapeColor;
+                Debug.Log(Sphere.Instance.ShapeColor);
             }
         }
         else
